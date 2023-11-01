@@ -62,7 +62,7 @@ jobs:
             dist/spa-${{ steps.source_name.outputs.SOURCE_NAME }}.tar.gz
             dist/pwa-${{ steps.source_name.outputs.SOURCE_NAME }}.tar.gz
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
 
   # build-and-push:
   #   name: Publish docker images to Docker Hub
